@@ -1,0 +1,221 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #BFD7E4;
+}
+
+body::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 465px;
+	background: #293241;
+	z-index: -1;
+}
+
+#page {
+	width: 750px;
+  margin: 0 auto 360px;
+}
+
+header {
+	margin-top: 103px;
+	text-align: center;
+}
+
+header h1 {
+	font: 400 36px 'Staatliches';
+	color: #fff;
+}
+
+header p {
+	font: 400 16px 'Poppins';
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-top: 32px;
+	background: #fff;
+	border-radius: 20px 20px 20px 20px;
+}
+
+form::before {
+	content: 'INFORMAÇÕES PESSOAIS';
+	display: block;
+
+	font: 400 24px 'Staatliches';
+	line-height: 34px;
+	color: #fff;
+	text-align: center;
+	
+	
+	width: 100%;
+	padding: 50px 0;
+
+	border-radius: 20px 20px 0px 0px;
+	background: #F67669;
+}
+
+.padding {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 30px 64px 64px;
+}
+
+fieldset {
+	border: none;
+}
+
+.fieldset-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.fieldset-wrapper legend {
+	font: 400 24px 'Staatliches';
+	line-height: 34px;
+	color: #253B51;
+	text-align: center;
+	border-bottom: 1px solid #E6E6F0 ;
+	padding-bottom: 8px;
+	margin-bottom: 20px;
+}
+
+.col-2 {
+	display: flex;
+	gap: 22px;
+}
+
+.col-2 > div {
+	width: 100%;
+}
+
+.input-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-wrapper label {
+	font: 400 14px 'Poppins';
+	color: #4E4958;
+	line-height: 24px;
+	margin-bottom: 8px;
+}
+
+.input-wrapper input, select, textarea {
+	color: #4E4958;
+  padding: 0 24px;
+  line-height: 26px;
+}
+
+.input-wrapper input {
+	height: 55px;
+	background: #FAFAFC;
+	border-radius: 8px;
+	border: 1px solid #E6E6F0;
+	font: 400 14px 'Poppins';
+}
+
+.input-wrapper label span {
+	color: #6d6b73;
+	font: 400 12px 'Poppins';
+	line-height: 20px;
+}
+
+.input-wrapper select {
+	appearance: none;
+	-webkit-appearance: none;
+
+	width: 300px;
+	height: 55px;
+	border-radius: 8px;
+	border: 1px solid #E6E6F0;
+	background: #FAFAFC;
+}
+
+.input-wrapper textarea {
+	width: 608px;
+	height: 166px;
+	border-radius: 8px; 
+	border: 1px solid #E6E6F0;
+	background: #FAFAFC;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+	display: block;
+	background: #FAFAFC;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+	background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_2402_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2402_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+
+.col-3 {
+	display: flex;
+	gap: 32px;
+}
+
+.col-3 > div:nth-child(1) {
+	width: 100%;
+}
+
+#button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 0px 0px 20px 20px;
+	background: #fff;
+	padding: 0 64px 64px 64px;
+}
+
+#button button {
+	padding: 15px 40px;
+	border-radius: 8px;
+	background: #F67669;
+	border: none;
+
+	font: 400 20px 'Staatliches';
+	line-height: 26px;
+	color: #fff;
+}
+
+#button button:hover {
+	background: #c66156;
+	color: #cfcfcf;
+	cursor: pointer;
+}
